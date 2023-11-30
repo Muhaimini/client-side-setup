@@ -13,6 +13,7 @@ specifiers:
   autoprefixer: ^10.0.1
   axios: ^1.6.2
   classname: ^0.0.0
+  classnames: ^2.3.2
   dotenv: ^16.3.1
   eslint: ^8
   eslint-config-next: 14.0.3
@@ -37,6 +38,7 @@ dependencies:
   '@tanstack/react-query-next-experimental': 5.8.7_b53zl3i43xt5xfzbtdyudfkm7i
   axios: 1.6.2
   classname: 0.0.0
+  classnames: 2.3.2
   dotenv: 16.3.1
   lodash: 4.17.21
   next: 14.0.3_biqbaboplfbrettd7655fr4n2y
@@ -806,6 +808,10 @@ packages:
 
   /classname/0.0.0:
     resolution: {integrity: sha512-kkhsspEJdUW+VhuvNzb2sQf0KbafDPfd36dB1qf03Uu42dWZwMQzaQuyNkaRr5ir0ZiAN0+TlH/EOOfwb/aaXg==}
+    dev: false
+
+  /classnames/2.3.2:
+    resolution: {integrity: sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==}
     dev: false
 
   /client-only/0.0.1:

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { Provider as QueryClientProvider } from "^/utils/react-query";
+import BaseLayout from "^/layouts/base";
 
 import "^/styles/globals.css";
 
-const RootLayout = ({ children }: ChildrenComponent) => {
+const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en">
       <head>
@@ -12,7 +13,9 @@ const RootLayout = ({ children }: ChildrenComponent) => {
       </head>
       <body>
         <QueryClientProvider>
-          <MantineProvider>{children}</MantineProvider>
+          <MantineProvider>
+            <BaseLayout>{children}</BaseLayout>
+          </MantineProvider>
         </QueryClientProvider>
       </body>
     </html>

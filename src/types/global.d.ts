@@ -1,8 +1,10 @@
-interface ChildrenComponent {
-  children: ReactNode;
-}
+declare module "@apps/types" {
+  type AppSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
 
-interface ModalProps extends Partial<ChildrenComponent> {
-  isOpen?: boolean;
-  onClose?: () => void;
+  interface DisplayAction {
+    isOpen: boolean;
+    onOpen: () => void;
+    onClose: () => void;
+    onToggle: () => void;
+  }
 }
