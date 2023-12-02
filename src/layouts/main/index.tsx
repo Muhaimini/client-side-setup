@@ -4,7 +4,7 @@ import React, { memo, PropsWithChildren } from "react";
 import cx from "classnames";
 
 const Parent = ({ children }: PropsWithChildren) => {
-  return <div className="h-full w-full relative">{children}</div>;
+  return <div className="h-full w-full box-border">{children}</div>;
 };
 
 const Header = ({
@@ -24,7 +24,7 @@ const Body = ({
   children,
   className = "p-4",
 }: PropsWithChildren<{ className?: string }>) => {
-  return <div className={cx("h-full w-full", className)}>{children}</div>;
+  return <div className={cx("flex flex-col gap-4", className)}>{children}</div>;
 };
 
 const Footer = ({

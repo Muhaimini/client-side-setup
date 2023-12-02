@@ -1,6 +1,6 @@
 "use client";
 
-import useGetJsonPlacholder from "^/hooks/queries/use-get-json-placholder";
+import useGetJsonPlacholder from "hooks/queries/use-get-json-placholder";
 import { useRouter } from "next/navigation";
 import React, { memo } from "react";
 

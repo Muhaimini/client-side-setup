@@ -1,15 +1,16 @@
 "use client";
 
 import React, { memo } from "react";
-import HomeLayout from "^/layouts/home";
+import MainLayout from "^layouts/main";
 import { Button } from "@mantine/core";
 import { useRouter } from "next/navigation";
+import { Card, Container } from "components";
 
 const Home = () => {
   const { push } = useRouter();
   return (
-    <HomeLayout>
-      <HomeLayout.Header>
+    <MainLayout>
+      <MainLayout.Header>
         <Button
           color="dark"
           variant="outline"
@@ -17,15 +18,17 @@ const Home = () => {
         >
           go to dashborad
         </Button>
-      </HomeLayout.Header>
+      </MainLayout.Header>
 
-      <HomeLayout.Body>
-        <div>hello</div>
-        <div>oke</div>
-      </HomeLayout.Body>
-
-      <HomeLayout.Footer>Test!</HomeLayout.Footer>
-    </HomeLayout>
+      <MainLayout.Body className="mx-10 my-7">
+        <Card className="h-40">Jumbotron</Card>
+        <Container>
+          <Card className="w-full h-40">1</Card>
+          <Card className="w-full h-40">2</Card>
+          <Card className="w-full h-40">3</Card>
+        </Container>
+      </MainLayout.Body>
+    </MainLayout>
   );
 };
 

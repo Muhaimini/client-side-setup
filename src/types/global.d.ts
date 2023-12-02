@@ -1,5 +1,5 @@
 declare module "@apps/types" {
-  type AppSize = "xs" | "sm" | "md" | "lg" | "xl" | "xxl";
+  type AppSize = "xs" | "sm" | "md" | "lg" | "xl" | "2xl";
 
   interface DisplayAction {
     isOpen: boolean;
